@@ -4,6 +4,7 @@ import com.lambton.collage.Student;
 import com.lambton.collage.Teacher;
 import com.lambton.hardware.Computer;
 import com.lambton.hardware.Laptop;
+import com.lambton.other.IDisplay;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,8 +29,6 @@ public class DayFiveInheritance {
         student.setCourseName("MobileApplications");
         student.setMarks(marks);
 
-
-
         Laptop laptop = new Laptop();
         laptop.setId(1234);
         laptop.setManufactureName("HP");
@@ -43,10 +42,16 @@ public class DayFiveInheritance {
         teacher.setLastName("Patel");
         teacher.setGender("Male");
         student.setDateOfBirth(new SimpleDateFormat("dd/MM/yyyy").parse("31/3/1980"));
-        teacher.setEmail("Patel@gmail.com");git
+        teacher.setEmail("Patel@gmail.com");
         teacher.setDepartmentName("MobileApplication");
         teacher.setDesignation("Professor");
+        teacher.setJoiningDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/3/2019"));
         teacher.setSalary("$100_000");
+
+
+        student.display();
+
+
 
     }
 }

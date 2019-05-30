@@ -6,6 +6,36 @@ public class Mobile extends Computer {
     private boolean canMakeCall;
     private String providerName;
 
+    public Mobile(){
+
+    }
+
+    /**
+     *
+     * @param operatingSystem
+     * @param canMakeCall
+     * @param providerName
+     */
+    public Mobile(String operatingSystem, boolean canMakeCall, String providerName) {
+        this.operatingSystem = operatingSystem;
+        this.canMakeCall = canMakeCall;
+        this.providerName = providerName;
+    }
+
+    /**
+     *
+     * @param id
+     * @param manufacturerName
+     * @param operatingSystem
+     * @param canMakeCall
+     * @param providerName
+     */
+    public Mobile(int id, String manufacturerName, String operatingSystem, boolean canMakeCall, String providerName) {
+        super(id, manufacturerName);
+        this.operatingSystem = operatingSystem;
+        this.canMakeCall = canMakeCall;
+        this.providerName = providerName;
+    }
 
     public String getOperatingSystem() {
         return operatingSystem;

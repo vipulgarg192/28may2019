@@ -1,10 +1,11 @@
 package com.lambton.collage;
 
 import com.lambton.hardware.Computer;
+import com.lambton.other.IDisplay;
 
 import java.util.Date;
 
-public class Person {
+public abstract class Person implements IDisplay {
 
     private int personId;
     private String firstName;
@@ -12,6 +13,8 @@ public class Person {
     private Date dateOfBirth;
     private String email;
     private String gender;
+
+
 
 
     public String getGender() {
@@ -31,7 +34,6 @@ public class Person {
     }
 
     private Computer computer;
-
 
     public int getPersonId() {
         return personId;
@@ -77,4 +79,6 @@ public class Person {
     public String getFullName(){
         return  String.format("%s,%s",this.firstName,this.lastName);
     }
+
+
 }

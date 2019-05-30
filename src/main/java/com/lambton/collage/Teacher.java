@@ -42,4 +42,14 @@ public class Teacher extends Person {
 
     private Date joiningDate;
 
+    @Override
+    public void display() {
+
+    }
+
+    @Override
+    public void print() {
+    }
+
+
 }
